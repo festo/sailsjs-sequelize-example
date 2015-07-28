@@ -1,3 +1,3 @@
-# sailsjs-sequelize
+# sailsjs-sequelize-example
 
-a [Sails](http://sailsjs.org) application
+Read the tutorial in my blog: [Munkacsy.me](http://munkacsy.me/use-sequelize-with-sails-js/)
