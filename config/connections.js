@@ -75,11 +75,18 @@ module.exports.connections = {
   *                                                                          *
   ***************************************************************************/
   somePostgresqlServer: {
-    adapter: 'sails-postgresql',
-    host: 'localhost',
     user: 'postgres',
     password: '',
-    database: 'sailsjs-sequelize-example'
+    database: 'sailsjs-sequelize-example',
+    options: {
+      host: 'localhost',
+      dialect: 'postgres',
+      pool: {
+        max: 5,
+        min: 0,
+        idle: 10000
+      }
+    }
   }
 
 
