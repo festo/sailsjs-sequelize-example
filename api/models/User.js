@@ -6,14 +6,23 @@
 */
 
 module.exports = {
-
   attributes: {
-  	name: 'string',
-    age: 'integer',
-    images: {
-    	collection: 'image',
-    	via: 'owner'
-    }
+  	name: {
+  		type: Sequelize.INTEGER
+  	},
+    age: {
+    	type: Sequelize.INTEGER
+    }    
+  },
+  associations: function () {
+  	User.hasMany(Image, {as: 'images', foreignKey: 'owner'});
+  },
+  options: {
+    freezeTableName: false,
+    tableName: 'user',
+    classMethods: {},
+    instanceMethods: {},
+    hooks: {}
   }
 };
 

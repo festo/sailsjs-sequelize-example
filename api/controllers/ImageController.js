@@ -6,6 +6,16 @@
  */
 
 module.exports = {
-	
+	index: function(req, res) {
+		Image.findAll({
+			include: [
+				{model: User}
+			]
+		}).then(function(images) {
+			res.json(images);
+		}).catch(function(err) {
+			res.json(err);
+		});
+	}
 };
 
