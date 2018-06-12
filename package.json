@@ -5,7 +5,9 @@
   "description": "a Sails application",
   "keywords": [],
   "dependencies": {
+    "connect": "^3.6.6",
     "continuation-local-storage": "^3.1.4",
+    "cookie": "^0.3.1",
     "ejs": "~0.8.4",
     "grunt": "0.4.2",
     "grunt-contrib-clean": "~0.5.0",
@@ -23,6 +25,7 @@
     "pg": "^4.4.0",
     "pg-hstore": "^2.3.2",
     "rc": "~0.5.0",
+    "redis": "^2.8.0",
     "sails": "~0.10.5",
     "sails-disk": "~0.10.0",
     "sequelize": "^3.5.1"
